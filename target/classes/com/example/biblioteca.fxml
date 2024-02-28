@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.BibliotecaController">
+   <children>
+      <Button fx:id="libro" layoutX="72.0" layoutY="276.0" mnemonicParsing="false" onAction="#addLibro" text="ADD LIBRO" />
+      <Button fx:id="prestamo" layoutX="192.0" layoutY="276.0" mnemonicParsing="false" onAction="#prestamo" text="PRESTAMO" />
+      <TableView fx:id="table" layoutX="55.0" layoutY="37.0" prefHeight="200.0" prefWidth="507.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="titulo" prefWidth="75.0" text="TITULO" />
+            <TableColumn fx:id="autor" prefWidth="75.0" text="AUTOR" />
+            <TableColumn fx:id="isbn" prefWidth="75.0" text="ISBN" />
+            <TableColumn fx:id="fecha" prefWidth="75.0" text="FECHA" />
+            <TableColumn fx:id="tematica" prefWidth="75.0" text="TEMATICA" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

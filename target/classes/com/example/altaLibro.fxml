@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="314.0" prefWidth="376.0"
+  xmlns="http://javafx.com/javafx/21"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AltaLibroController">
+  <children>
+    <Label layoutX="11.0" layoutY="14.0" text="Add New Book" />
+    <Label layoutX="30.0" layoutY="58.0" text="ID Libro" />
+    <TextField fx:id="idLibroField" layoutX="113.0" layoutY="54.0" />
+    <Label layoutX="36.0" layoutY="97.0" text="Titulo" />
+    <TextField fx:id="tituloField" layoutX="113.0" layoutY="93.0" />
+    <Label layoutX="38.0" layoutY="139.0" text="ISBN" />
+    <TextField fx:id="isbnField" layoutX="113.0" layoutY="135.0" />
+    <Button fx:id="addButton" layoutX="276.0" layoutY="274.0" onAction="#addBook" text="Add Book" />
+    <Label layoutX="38.0" layoutY="179.0" text="Autor" />
+    <Label layoutX="29.0" layoutY="210.0" text="Tematica" />
+    <Label layoutX="28.0" layoutY="246.0" text="Fecha Edicion" />
+    <TextField fx:id="fechaField" layoutX="113.0" layoutY="242.0" />
+    <TextField fx:id="tematicaField" layoutX="113.0" layoutY="206.0" />
+    <TextField fx:id="autorField" layoutX="113.0" layoutY="166.0" />
+  </children>
+</AnchorPane>
